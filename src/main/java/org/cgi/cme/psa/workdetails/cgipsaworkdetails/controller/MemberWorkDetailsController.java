@@ -36,6 +36,7 @@ public class MemberWorkDetailsController {
   private ResponseEntity<MemberDetailsDTO> getMemberDetail(@RequestParam int memberId) {
     log.info("Retrieving member detais for give member ID"+memberId);
     MemberDetailsDTO memberDetailsDTO=memberWorkDetailsService.getMemberDetail(memberId);
+    log.info("Retrieved member detais for give member ID"+memberId);
     return memberDetailsDTO == null 
                                ? new ResponseEntity<>(HttpStatus.NO_CONTENT)
                                : new ResponseEntity<>(memberDetailsDTO, HttpStatus.OK);
