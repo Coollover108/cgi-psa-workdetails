@@ -34,7 +34,7 @@ public class MemberWorkDetailsController {
    */
   @GetMapping("/getMemberDetail")
   private ResponseEntity<MemberDetailsDTO> getMemberDetail(@RequestParam int memberId) {
-    Demo for failure.....
+   // Demo for failure.....
     log.info("Retrieving member detais for give member ID"+memberId);
     MemberDetailsDTO memberDetailsDTO=memberWorkDetailsService.getMemberDetail(memberId);
     log.info("Retrieved member detais for give member ID"+memberId);
