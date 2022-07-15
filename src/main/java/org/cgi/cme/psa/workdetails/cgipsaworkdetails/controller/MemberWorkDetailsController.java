@@ -32,7 +32,7 @@ public class MemberWorkDetailsController {
    * 
    * Description: This method will allow user to fetch details of specific member PSA based of member ID.
    */
-  @GetMapping("/getMemberDetail") test for failure
+  @GetMapping("/getMemberDetail")
   private ResponseEntity<MemberDetailsDTO> getMemberDetail(@RequestParam int memberId) {
    // Demo for failure.....
     log.info("Retrieving member detais for give member ID"+memberId);
